@@ -23,6 +23,7 @@
 
 # Import statements: the list of outside modules you'll be using in your
 # skills, whether from other files in mycroft-core or from external libraries
+
 from os.path import dirname
 
 from adapt.intent import IntentBuilder
@@ -38,11 +39,11 @@ LOGGER = getLogger(__name__)
 # The logic of each skill is contained within its own class, which inherits
 # base methods from the MycroftSkill class with the syntax you can see below:
 # "class ____Skill(MycroftSkill)"
-class lumio-skill(MycroftSkill):
+class lumioskill(MycroftSkill):
 
     # The constructor of the skill, which calls MycroftSkill's constructor
     def __init__(self):
-        super(lumio-skill, self).__init__(name="lumio-skill")
+        super(lumioskill, self).__init__(name="lumioskill")
 
     # This method loads the files needed for the skill's functioning, and
     # creates and registers each intent that the skill uses
@@ -82,4 +83,4 @@ class lumio-skill(MycroftSkill):
 # The "create_skill()" method is used to create an instance of the skill.
 # Note that it's outside the class itself.
 def create_skill():
-    return lumioSkill()
+    return lumioskill()
